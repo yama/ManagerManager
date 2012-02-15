@@ -9,9 +9,7 @@
 
 <body>
 
-<div id="banner">
-
-</div>
+<div id="banner">ManagerManager plugin fo MODx Evolution</div>
 
 
 <div id="main">
@@ -26,12 +24,29 @@
             <li><a href="widgets.htm">Widgets</a></li>
             <li><a href="sections.htm">Sections</a></li>
             <li>Changelog</li>
-        </ul>   
+        </ul>
     </div>
     
-  <div id="content">
+  <div class="content">
     <h1>Changelog</h1>
-	<h3>0.3.10 (2012.01.16) by <a href="http://www.DivanDesign.ru">DivanDesign</a></h3>
+	<h3>0.3.11 (2012.02.15) by <a href="http://www.DivanDesign.biz">DivanDesign</a></h3>
+	<ul>
+		<li>Bugfix: ManagerManager plugin settings last tab (functions/tabs.inc.php: line 132)</li>
+		<li>New: mm_ddAutoFolders widget - Automatically move documents (OnBeforeDocFormSave event) based on their date (publication date; any date in tv) into folders of year and month (like 2012/02/).</li>
+		<li>mm_ddSetFieldValue update to 1.0.2
+			<ul>
+				<li>Bugfix: Date format (widgets/ddsetfieldvalue/ddsetfieldvalue.php: line 34, 37)</li>
+			</ul>
+		</li>
+		<li>mm_ddGMap update to 1.0.2
+			<ul>
+				<li>New: Multilingual map (widgets/ddgmap/ddgmap.php: line 14, 103)</li>
+			</ul>
+		</li>
+		<li>Added documentation for new widgets: mm_ddGMap, mm_ddYMap, mm_ddSetFieldValue, mm_ddMaxLength, mm_ddAutoFolders (<a href="widgets.htm">docs/widgets.htm</a>)</li>
+		<li>Change style of documentation (docs/css/mm.css & minor changes of all html files in docs/) like you see =)</li>
+	</ul>
+	<h3>0.3.10 (2012.01.16) by <a href="http://www.DivanDesign.biz">DivanDesign</a></h3>
 	<ul>
 		<li>Bugfix: Fix jQ selector for rules mm_moveFieldsToTab (functions/fields.inc.php: line 274)</li>
 		<li>New: mm_default now support all fields (for TV like tv99, where 12 - id of TV) (functions/fieldvalues.inc.php: line 170)</li>
