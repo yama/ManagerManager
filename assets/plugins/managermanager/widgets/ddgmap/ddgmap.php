@@ -1,7 +1,7 @@
 <?php
 /**
  * mm_ddGMap
- * @version 1.0.1 (2012-01-13)
+ * @version 1.0.2 (2012-02-12)
  * 
  * Позволяет интегрировать карту Google Maps для получения координат.
  * 
@@ -11,7 +11,7 @@
 
 function mm_ddGMap($tvs, $roles='', $templates='', $w='auto', $h='400') {
 	
-	global $modx, $content, $mm_fields;
+	global $modx, $content, $mm_fields, $modx_lang_attribute;
 	$e = &$modx->Event;
 	
 	if ($e->name == 'OnDocFormRender' && useThisRule($roles, $templates)){
@@ -100,7 +100,7 @@ window.ddgminitialize = function(){
 };
 //Подключаем карту, вызываем callback функцию
 $j(window).on("load.ddEvents", function(){
-	$j("body").append("<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=false&callback=ddgminitialize\">");
+	$j("body").append("<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=false&hl='.$modx_lang_attribute.'&callback=ddgminitialize\">");
 });
 ';
 		}

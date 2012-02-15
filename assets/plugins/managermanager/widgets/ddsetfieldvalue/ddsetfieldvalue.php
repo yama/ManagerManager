@@ -1,7 +1,7 @@
 <?php
 /** 
  * ddSetFieldValue
- * @version 1.0.1 (2012-01-13)
+ * @version 1.0.2 (2012-02-12)
  * 
  * Жёстко выставляет необходимые значения заданному полю
  * 
@@ -31,10 +31,10 @@ function mm_ddSetFieldValue($field, $value='', $roles='', $templates=''){
 				$date_format = 'd-m-Y';
 			break;
 			case 'mm/dd/YYYY':
-				$date_format = 'm-d-Y';
+				$date_format = 'm/d/Y';
 			break;
 			case 'YYYY/mm/dd':
-				$date_format = 'Y-m-d';
+				$date_format = 'Y/m/d';
 			break;
 		}
 		
